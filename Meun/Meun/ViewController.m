@@ -21,8 +21,10 @@
 {
     [super viewDidLoad];
 
+    [self.navigationController.navigationBar setHidden:YES];
     
-    self.view.backgroundColor = [UIColor brownColor];
+    
+    self.view.backgroundColor =  [UIColor colorWithRed:240/255.0 green:240/255.0 blue:230/255.0 alpha:1];
     
 
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -34,6 +36,19 @@
 
 
 }
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setHidden:YES];
+}
+
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+//    [self.navigationController.navigationBar setHidden:NO];
+}
+
 
 -(void)moveToHome:(id)sender
 {

@@ -40,8 +40,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"A page";
 
-    self.view.backgroundColor = [UIColor purpleColor];
+    self.view.backgroundColor =  [UIColor colorWithRed:240/255.0 green:240/255.0 blue:230/255.0 alpha:1];
+    
+    UILabel *lbl = [[UILabel alloc]init];
+    lbl.text = @"this is A page";
+    lbl.frame = CGRectMake(100, 200, 200, 30);
+    [lbl setTextColor:[UIColor brownColor]];
+    [self.view addSubview:lbl];
+    
+    
 
 }
 

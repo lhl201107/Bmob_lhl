@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MeunViewController : UIViewController
+@interface MeunViewController : UIViewController<UIAlertViewDelegate>
 
 @end

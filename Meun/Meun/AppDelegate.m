@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +24,17 @@
     
     MeunViewController *meun = [[MeunViewController alloc]init];
     [SlideNavigationController sharedInstance].leftMenu = meun;
+    
+    
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:139/255.0 blue:180/255.0 alpha:1]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    }
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    // Status bar white
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     
     return YES;
 }

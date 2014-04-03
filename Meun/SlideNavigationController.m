@@ -44,7 +44,7 @@
 @synthesize enableSwipeGesture;
 
 #define MENU_OFFSET 60
-#define MENU_SLIDE_ANIMATION_DURATION .3
+#define MENU_SLIDE_ANIMATION_DURATION .2
 #define MENU_QUICK_SLIDE_ANIMATION_DURATION .1
 #define MENU_IMAGE @"menu-button"
 
@@ -254,7 +254,8 @@ static SlideNavigationController *singletonInstance;
 					 animations:^{
 						 CGRect rect = self.view.frame;
 						 rect.origin.x = (menu == MenuLeft) ? (rect.size.width - MENU_OFFSET) : ((rect.size.width - MENU_OFFSET )* -1);
-						 self.view.frame = rect;
+                         NSLog(@"%f",rect.origin.x);
+                         self.view.frame = rect;
 					 }
 					 completion:^(BOOL finished) {
 						 if (completion)
@@ -369,7 +370,7 @@ static SlideNavigationController *singletonInstance;
 		NSInteger positiveVelocity = (velocity.x > 0) ? velocity.x : velocity.x * -1;
 		
 		// If the speed is high enough follow direction
-		if (positiveVelocity >= velocityForFollowingDirection)
+		if (positiveVelocity >= velocityForFollowingDirection/5)
 		{
 			// Moving Right
 			if (velocity.x > 0)
