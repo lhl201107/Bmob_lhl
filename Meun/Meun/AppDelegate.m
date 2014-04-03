@@ -17,7 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    ViewController *vc = [[ViewController alloc]init];
+//    ViewController *vc = [[ViewController alloc]init];
+    HomeViewController *vc = [[HomeViewController alloc]init];
+    
     SlideNavigationController *slide = [[SlideNavigationController alloc]initWithRootViewController:vc];
     
     self.window.rootViewController =slide;

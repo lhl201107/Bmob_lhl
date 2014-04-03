@@ -11,6 +11,7 @@
 #import "HomeViewController.h"
 #import "AViewController.h"
 #import "BViewController.h"
+#import "CViewController.h"
 
 @interface MeunViewController ()
 
@@ -66,9 +67,9 @@
     
     UIButton *loginOut = [UIButton buttonWithType:UIButtonTypeSystem];
     loginOut.frame = CGRectMake(10, 410, 240, 44);
-    [loginOut setTitle:@"Login Out" forState:UIControlStateNormal];
+    [loginOut setTitle:@"C" forState:UIControlStateNormal];
     [loginOut setBackgroundColor:[UIColor orangeColor]];
-    [loginOut addTarget:self action:@selector(loginOut:) forControlEvents:UIControlEventTouchUpInside];
+    [loginOut addTarget:self action:@selector(moveToC:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginOut];
     
 }
@@ -91,21 +92,13 @@
     [[SlideNavigationController sharedInstance] switchToViewController:avc withCompletion:nil];
 }
 
--(void)loginOut:(id)sender
+-(void)moveToC:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"确定要退出当前账号吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    [alert show];
-
+    CViewController *cvc = [[CViewController alloc]init];
+    [[SlideNavigationController sharedInstance] switchToViewController:cvc withCompletion:nil];
 }
 
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex==1)
-    {
-        [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
-    }
-}
 
 
 - (void)didReceiveMemoryWarning

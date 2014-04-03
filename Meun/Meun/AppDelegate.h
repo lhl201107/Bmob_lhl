@@ -11,6 +11,8 @@
 #import "SlideNavigationController.h"
 #import "MeunViewController.h"
 #import "ViewController.h"
+#import "HomeViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
