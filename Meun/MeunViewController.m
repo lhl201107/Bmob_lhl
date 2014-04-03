@@ -33,6 +33,15 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
 
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(70, 40,120, 120)];
+    CALayer *lay = imageView.layer;//获取ImageView的层
+    [lay setMasksToBounds:YES];
+    [lay setCornerRadius:60.0];
+    imageView.backgroundColor = [UIColor whiteColor];
+    imageView.image = [UIImage imageNamed:@"1234.jpg"];
+    [self.view addSubview:imageView];
+    
+    
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     loginBtn.frame = CGRectMake(10, 200, 240, 44);
     [loginBtn setTitle:@"Home" forState:UIControlStateNormal];
@@ -86,10 +95,7 @@
 {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"确定要退出当前账号吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     [alert show];
-    
-    
-    
-    
+
 }
 
 

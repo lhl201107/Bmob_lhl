@@ -27,6 +27,10 @@
     self.view.backgroundColor =  [UIColor colorWithRed:240/255.0 green:240/255.0 blue:230/255.0 alpha:1];
     
 
+ 
+    
+    
+    
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     loginBtn.frame = CGRectMake(100, 200, 100, 50);
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];

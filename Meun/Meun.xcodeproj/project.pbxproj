@@ -30,6 +30,7 @@
 		9E7BFAAC18ED00DF007B3D81 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E7BFAAA18ED00DF007B3D81 /* menu-button.png */; };
 		9E7BFAAF18ED00F2007B3D81 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BFAAE18ED00F2007B3D81 /* SlideNavigationController.m */; };
 		9E7BFAB218ED05C4007B3D81 /* MeunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BFAB118ED05C4007B3D81 /* MeunViewController.m */; };
+		9E7BFAF518ED4AEB007B3D81 /* 1234.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E7BFAF418ED4AEB007B3D81 /* 1234.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		9E7BFAAE18ED00F2007B3D81 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
 		9E7BFAB018ED05C4007B3D81 /* MeunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeunViewController.h; sourceTree = "<group>"; };
 		9E7BFAB118ED05C4007B3D81 /* MeunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeunViewController.m; sourceTree = "<group>"; };
+		9E7BFAF418ED4AEB007B3D81 /* 1234.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1234.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		9E7BFAA818ED00BA007B3D81 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				9E7BFAF418ED4AEB007B3D81 /* 1234.jpg */,
 				9E7BFAA918ED00DF007B3D81 /* menu-button@2x.png */,
 				9E7BFAAA18ED00DF007B3D81 /* menu-button.png */,
 				9E7BFAAD18ED00F2007B3D81 /* SlideNavigationController.h */,
@@ -290,6 +293,7 @@
 				9E7BFAAB18ED00DF007B3D81 /* menu-button@2x.png in Resources */,
 				9E7BFA6E18ECFFEE007B3D81 /* InfoPlist.strings in Resources */,
 				9E7BFA7718ECFFEE007B3D81 /* Main.storyboard in Resources */,
+				9E7BFAF518ED4AEB007B3D81 /* 1234.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +531,7 @@
 				9E7BFA9418ECFFEE007B3D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E7BFA9518ECFFEE007B3D81 /* Build configuration list for PBXNativeTarget "MeunTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +540,7 @@
 				9E7BFA9718ECFFEE007B3D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
